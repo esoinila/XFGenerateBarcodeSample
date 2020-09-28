@@ -7,15 +7,15 @@
             <Label x:Name="MainTitle" Text="Barcode Zample" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" />
         </Frame>
 
-        <Label x:Name="valueLabel" Text="QR-code: Type here to have it in QR code" HorizontalTextAlignment="Center" TextColor="Black" FontSize="18" />
+        <Label x:Name="valueLabel" Text="QR-code: replace me" HorizontalTextAlignment="Center" TextColor="Black" FontSize="18" />
         
-        <Editor x:Name="wantedText" VerticalOptions="FillAndExpand" Text="Type here to have it in QR code" />
+        <Editor x:Name="wantedText" VerticalOptions="FillAndExpand" Text="replace me" />
         
         <Button Text="Update QR Code"
                 HorizontalOptions="Center"
                 VerticalOptions="Start" Clicked="OnButtonClicked" />
 
-        <zxing:ZXingBarcodeImageView x:Name="MyImageView" BarcodeValue="Type here to have it in QR code" WidthRequest="400" HeightRequest="400">
+        <zxing:ZXingBarcodeImageView x:Name="MyImageView" BarcodeValue="replace me" WidthRequest="400" HeightRequest="400">
             <zxing:ZXingBarcodeImageView.BarcodeOptions>
                 <zxingcommon:EncodingOptions Height="400" Width="400" />
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
