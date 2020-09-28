@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZXing.PDF417.Internal;
 
 namespace GenerateBarcodeSample
 {
@@ -20,7 +21,12 @@ namespace GenerateBarcodeSample
 
         async void OnButtonClicked(object sender, EventArgs args)
         {
-            await DisplayAlert("Alert", "You pressed a button", "OK");
+            valueLabel.Text = "QR-code: bla bla";
+            MainTitle.Text = "Otsikko Uusi";
+            MyImageView.BarcodeValue = "Satoi kuin Esterin sielta";
+
+            //await DisplayAlert("Alert", "You pressed a button", "OK");
+
         }
     }
 }
