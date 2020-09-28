@@ -1,14 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GenerateBarcodeSample.MainPage" xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms" xmlns:zxingcommon="clr-namespace:ZXing.Common;assembly=zxing">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="GenerateBarcodeSample.MainPage" xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms" 
+             xmlns:zxingcommon="clr-namespace:ZXing.Common;assembly=zxing">
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Barcode Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            <Label Text="Barcode Zample" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" />
         </Frame>
+
+        <Label Text="Barcode Zample" HorizontalTextAlignment="Center" TextColor="Black" FontSize="18" />
+        <Editor VerticalOptions="FillAndExpand" />
+        
+        <Button Text="Update QR Code"
+                HorizontalOptions="Center"
+                VerticalOptions="Start" Clicked="OnButtonClicked" />
 
         <zxing:ZXingBarcodeImageView BarcodeValue="The Secret message is: Hobladi Goblaa!!" WidthRequest="500" HeightRequest="500">
             <zxing:ZXingBarcodeImageView.BarcodeOptions>
                 <zxingcommon:EncodingOptions Height="500" Width="500" />
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
         </zxing:ZXingBarcodeImageView>
+
+        <!--<zxing:ZXingBarcodeImageView BarcodeValue="The Secret message is: Hobladi Goblaa!!" WidthRequest="500" HeightRequest="500">
+            <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                <zxingcommon:EncodingOptions Height="500" Width="500" />
+            </zxing:ZXingBarcodeImageView.BarcodeOptions>
+        </zxing:ZXingBarcodeImageView>-->
     </StackLayout>
 </ContentPage>
