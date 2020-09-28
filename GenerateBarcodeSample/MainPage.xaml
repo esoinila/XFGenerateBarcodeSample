@@ -21,10 +21,5 @@
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
         </zxing:ZXingBarcodeImageView>
 
-        <!--<zxing:ZXingBarcodeImageView BarcodeValue="The Secret message is: Hobladi Goblaa!!" WidthRequest="500" HeightRequest="500">
-            <zxing:ZXingBarcodeImageView.BarcodeOptions>
-                <zxingcommon:EncodingOptions Height="500" Width="500" />
-            </zxing:ZXingBarcodeImageView.BarcodeOptions>
-        </zxing:ZXingBarcodeImageView>-->
     </StackLayout>
 </ContentPage>
