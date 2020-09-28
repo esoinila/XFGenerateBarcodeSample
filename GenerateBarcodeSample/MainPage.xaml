@@ -5,7 +5,7 @@
             <Label Text="Barcode Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
         </Frame>
 
-        <zxing:ZXingBarcodeImageView BarcodeFormat="EAN_13" BarcodeValue="123456789012" WidthRequest="500" HeightRequest="500">
+        <zxing:ZXingBarcodeImageView BarcodeValue="The Secret message is: Hobladi Goblaa!!" WidthRequest="500" HeightRequest="500">
             <zxing:ZXingBarcodeImageView.BarcodeOptions>
                 <zxingcommon:EncodingOptions Height="500" Width="500" />
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
