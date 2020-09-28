@@ -21,10 +21,13 @@ namespace GenerateBarcodeSample
 
         async void OnButtonClicked(object sender, EventArgs args)
         {
-            valueLabel.Text = "QR-code: bla bla";
-            MainTitle.Text = "Otsikko Uusi";
-            MyImageView.BarcodeValue = "Satoi kuin Esterin sielta";
-
+            valueLabel.Text = "QR-code: " + wantedText.Text;
+            //MainTitle.Text = "Otsikko Uusi";
+            MyImageView.BarcodeValue = wantedText.Text;
+            
+            //MyImageView.BarcodeValue = "Satoi kuin Esterin sielta";
+            
+            // wantedText
             //await DisplayAlert("Alert", "You pressed a button", "OK");
 
         }

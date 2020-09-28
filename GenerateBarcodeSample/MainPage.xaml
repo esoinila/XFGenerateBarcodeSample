@@ -8,7 +8,8 @@
         </Frame>
 
         <Label x:Name="valueLabel" Text="Barcode Zample" HorizontalTextAlignment="Center" TextColor="Black" FontSize="18" />
-        <Editor VerticalOptions="FillAndExpand" />
+        
+        <Editor x:Name="wantedText" VerticalOptions="FillAndExpand" Text="Type here to have it in QR code" />
         
         <Button Text="Update QR Code"
                 HorizontalOptions="Center"
